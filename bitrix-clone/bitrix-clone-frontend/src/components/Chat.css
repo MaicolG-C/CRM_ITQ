@@ -1,0 +1,219 @@
+/* -------------------- CONTAINER GENERAL -------------------- */
+.container {
+    display: flex;
+    height: 90vh; /* Ajusta según necesites */
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* -------------------- PANEL DE CONVERSACIONES -------------------- */
+.conversationsPanel {
+    width: 320px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.panelHeader {
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    height: 68px;
+    box-sizing: border-box;
+}
+
+.panelTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.conversationList {
+    flex: 1;
+    overflow-y: auto;
+    padding-top: 8px;
+}
+
+.conversationItem {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 0 8px 4px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.conversationItem:hover { background-color: #f5f5f5; }
+
+.selectedConversation { background-color: #e7f3ff; }
+
+.avatar { width: 48px; height: 48px; border-radius: 50%; }
+
+.conversationDetails { margin-left: 12px; flex: 1; }
+
+.conversationName {
+    font-weight: bold;
+    color: #1f2937;
+    font-size: 16px;
+    margin: 0;
+}
+
+.conversationMessage {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* -------------------- VENTANA DE CHAT -------------------- */
+.chatWindow {
+    flex: 1;
+    background-color: #e5ddd5;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatHeader {
+    padding: 12px;
+    height: 68px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.headerAvatar { width: 40px; height: 40px; border-radius: 50%; margin-right: 12px; }
+
+.chatHeaderName { font-size: 18px; font-weight: 600; color: #1f2937; margin: 0; }
+
+.messagesContainer {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------- BURBUJAS DE MENSAJE -------------------- */
+.messageBubbleContainer {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+}
+
+.myMessageContainer { align-self: flex-end; }
+.otherMessageContainer { align-self: flex-start; }
+
+.messageBubble {
+    padding: 8px 12px;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.myMessageBubble {
+    background-color: #dcf8c6;
+    border-top-right-radius: 0;
+}
+
+.otherMessageBubble {
+    background-color: #ffffff;
+    border-top-left-radius: 0;
+}
+
+.messageBubble p {
+    margin: 0;
+    color: #1f2937;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.messageImage {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* -------------------- DOCUMENTOS -------------------- */
+.documentContainer {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    min-width: 200px;
+    text-decoration: none;
+}
+
+.documentIcon { font-size: 28px; margin-right: 10px; }
+
+.documentText { color: #1f2937; font-weight: bold; font-size: 14px; }
+.downloadText { color: #667781; font-size: 12px; margin-top: 2px; }
+
+/* -------------------- TIMESTAMP -------------------- */
+.timestamp {
+    font-size: 11px;
+    color: #667781;
+    margin-top: 4px;
+    text-align: right;
+    display: block;
+}
+
+/* -------------------- ÁREA DE INPUT -------------------- */
+.inputArea {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f0f2f5;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: #6b7280;
+}
+
+.messageInput {
+    flex: 1;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 0 16px;
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+}
+
+.sendButton {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #005c4b;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.sendButton:disabled {
+    background-color: #aebac1;
+    cursor: not-allowed;
+}
+
+/* -------------------- EMOJIS Y ESTADOS -------------------- */
+.emojiPickerContainer { border-top: 1px solid #e0e0e0; }
+
+.loadingIndicator, .noMessagesText {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 20px;
+    flex: 1;
+    align-self: center;
+}

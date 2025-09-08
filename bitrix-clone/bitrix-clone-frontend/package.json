@@ -1,0 +1,51 @@
+{
+  "name": "bitrix-clone-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/daygrid": "^6.1.19",
+    "@fullcalendar/interaction": "^6.1.19",
+    "@fullcalendar/list": "^6.1.19",
+    "@fullcalendar/react": "^6.1.19",
+    "@fullcalendar/timegrid": "^6.1.19",
+    "axios": "^1.5.0",
+    "chart.js": "^4.5.0",
+    "date-fns": "^4.1.0",
+    "emoji-picker-react": "^4.13.2",
+    "moment": "^2.30.1",
+    "multer": "^2.0.2",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-big-calendar": "^1.19.4",
+    "react-calendar": "^6.0.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^8.7.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-modal": "^3.16.3",
+    "react-router-dom": "^6.17.0",
+    "react-scripts": "^5.0.1",
+    "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
